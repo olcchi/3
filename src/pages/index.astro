@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Welcome to Astro.">
 	
-	<main>
+	<main class="w-20">
 		<div id="three-container"></div>
 	</main>
 </Layout>
@@ -57,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
         // 创建轨道控制器
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true; // 启用阻尼效果
-        controls.dampingFactor = 0.01; // 阻尼系数
+        controls.dampingFactor = 0.05; // 阻尼系数
 
         // 添加环境光以确保场景中有足够的光线
         const ambientLight = new THREE.AmbientLight(0x404040); // 环境光
